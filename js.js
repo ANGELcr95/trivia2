@@ -122,12 +122,12 @@ const showResults = () => {
   let buttonReplayGame = document.createElement('button')
   buttonReplayGame.setAttribute("class", "buttonReplayGame" )
   let restartBtn = document.createElement("a");
-  restartBtn.setAttribute("href", "assets.html");
+  restartBtn.setAttribute("href", "/index.html");
   restartBtn.innerHTML = "ReplayGame"
   questionsContainer.appendChild(scortext);
   questionsContainer.appendChild(buttonReplayGame);
   buttonReplayGame.appendChild(restartBtn)
-  buttonReplayGame.addEventListener("click", () => {window.location="/assets.html"});
+  buttonReplayGame.addEventListener("click", () => {window.location="/index.html"});
 };
 
 //FOR QUE RECORRA TODOS LOS BOTONES
