@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle 830px at 95.6% -5%,
+    rgb(58, 35, 41) 20%,
+    rgb(25, 43, 53) 90%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  color: #fff;
+  width: 30%;
+  height: 60%;
+  background-image: radial-gradient(
+    circle 830px at 95.6% -5%,
+    rgb(23, 23, 31) 10%,
+    rgba(64, 70, 73, 0.5) 90%
+  );
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  animation-name:trivia;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes trivia {
+  from {
+    font-size: 1rem;
+    height: 2rem;
+  }
+  to {
+    font-size: 2.5rem;
+    height:2rem;
+  }
+}
+
+.question-field {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+select,
+input.amount{
+  color:rgba(255, 255, 255, 0.582);
+  margin-top: 10px;
+  background-color: transparent;
+  outline: none;
+  padding: 7px;
+  border: none;
+  border-bottom: 2px solid rgb(172, 164, 168);
+  border-radius: 0.5rem;
+}
+
+input[type="submit"] {
+  width: 90%;
+  background-color: rgb(34, 32, 32);
+  color: rgb(255, 255, 255);
+  
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+option{
+  background-color: rgb(66, 65, 65);
+}
+
+/* PREGUNTAS */
+
+.content {
+  width: 50%;
+  background-image: radial-gradient(
+    circle 830px at 95.6% -5%,
+    rgb(252, 252, 252) 10%,
+    rgba(233, 233, 233, 0.5) 90%
+  );
+  margin: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.question-items {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.question-items button {
+  width: 48%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-image: radial-gradient(
+    circle 830px at 95.6% -5%,
+    rgb(23, 23, 31) 0%,
+    rgba(64, 70, 73, 0.5) 90%
+  );
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.question-items button:hover {
+ opacity: 0.6;
+}
+
+#countdown{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.rules{
+  display: flex;
+  width: 100%;
+}
+
+.rules div{
+  margin: auto;
+  width: 30%;
+  border: 2px solid rgb(15, 26, 41);
+  border-radius: 2rem;
+  
+}
+
+span{
+  color: rgba(25, 39, 53, 0.781);
+  margin-bottom: 0.3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.buttonReplayGame{
+  margin-top: 1rem;
+  width: 90%;
+  background-color: rgb(70, 70, 70);
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.buttonReplayGame a{
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  width: 90%;
+  height: 1rem;
+}
+
+.buttonReplayGame:hover{
+  background-color: rgb(34, 32, 32);
+}
