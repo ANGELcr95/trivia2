@@ -1,4 +1,33 @@
 /* eslint-disable */
+
+//JS VENIDA
+let colour = document.getElementById('primerovenida')
+
+let load = () => {
+    document.getElementById('primerovenida').classList.add('unovenida');
+    document.getElementById('segundovenida').classList.add('dosvenida');
+    document.getElementById('spinprincipalvenida').classList.add('spinvenida');
+    document.getElementById('spinunovenida').classList.add('spin1venida');
+    document.getElementById('spindosvenida').classList.add('spin2venida');
+    document.getElementById('spintresvenida').classList.add('spin3venida');
+}
+
+load()
+
+function generarNuevoColor(){
+	var simbolos, color;
+	simbolos = "0123456789ABCDEF";
+	color = "#";
+
+	for(var i = 0; i < 6; i++){
+		color = color + simbolos[Math.floor(Math.random() * 16)];
+	}
+
+	colour.style.background = color;
+}
+
+generarNuevoColor()
+
 //MODULOS
 
 //ELEMENTOS HTML
@@ -102,9 +131,6 @@ const selectAnswer = id => {
   let answerId = id;
   if (answerId == correct_index_answer) {
     score = score + 1;
-    // console.log("Respuesta correcta !");
-  } else {
-    // console.log("Respuesta incorrecta 💔");
   }
   if (qIndex < amount.value - 1) {
     qIndex++;
@@ -147,51 +173,3 @@ triviaForm.addEventListener("submit", getAPIData);
 
 
 
-
-
-
-
-
-
-
-
-
-// //crea promesa
-// const promise = new Promise((resolve, reject) => {
-//     const randomNumber = Math.floor(Math.random() * 10);
-//     setTimeout(() => {
-
-
-//         // if (randomNumber > 5) {
-//         //     resolve(randomNumber);
-//         // } else {
-//         //     reject(new Error(`El numero generado (${randomNumber}) es menor a 5`))
-//         // }
-//     },3000);
-// });
-// promise.then(number => console.log(number)).catch(error => console.log(error));
-// // console.log(promise)
-
-// //ASYNC/ AWAY
-// const fetchDataApi = async () => { // que la funcion se asincrona
-//     try {
-//         const dittoResponse = await fetch(
-//             'https://pokeapi.co/api/v2/pokemon/ditto'
-//         )
-//         const dittoData = await dittoResponse.json();
-//         const dittoSpeciesUrl = await dittoData.species.url;
-//         const dittoSpeciesUrlObjects = await fetch(
-//             dittoSpeciesUrl
-//         )
-//         const dittoSpeciesUrlObjectsJSON = await dittoSpeciesUrlObjects.json()
-//         // console.log(dittoSpeciesUrlObjectsJSON)
-//     } catch (error) {
-//         // console.log(error)
-//     }
-// }
-// fetchDataApi()
-// import{example,asyncrono} from "./module.js";
-
-// // let variableAsync = await asyncrono()
-// console.log(variableAsync)
-// console.log(example('paso a mayusculas'))

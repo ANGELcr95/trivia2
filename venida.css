@@ -1,0 +1,221 @@
+/* This code about load */
+
+#primerovenida{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.unovenida{
+    left:0%;
+    background-color: rgb(197, 152, 30);
+    animation-name: unovenida;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.8,.17,0,.97);
+}
+#segundovenida{
+    position: absolute;
+    margin: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+.dosvenida{
+    left:0%;
+    background-color: rgb(0, 0, 0);
+    animation-name: dosvenida;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.8,.17,0,.97);
+}
+#spinprincipalvenida{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    top: 45%;
+    z-index: 100;
+}
+.spinvenida{
+    left:45%;
+    animation-name: spinvenida;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    
+}
+.spinvenida div{
+    margin:0.02rem ;
+    width: 100%;
+    height: 32%;
+    background-color: rgb(161, 161, 161);
+    border-radius:0.4rem 0 0 0.4rem;
+}
+.spin1venida{
+    left: 0;
+    animation-name: spin1venida;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.8,.17,0,.97);
+}
+.spin2venida{
+    left: 0;
+    animation-name: spin2venida;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.8,.17,0,.97);
+}
+.spin3venida{
+    left: 0;
+    animation-name: spin3venida;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.8,.17,0,.97);
+}
+
+@keyframes unovenida {
+    0%{
+    }
+    100%{
+        left: -100%;
+    }
+}
+
+@keyframes dosvenida  {
+    0%{
+    }
+    100%{
+        left: -200%;
+    }
+}
+
+@keyframes spinvenida  {
+    0%{
+        
+    }
+    100%{
+        left: -45%;
+    }
+}
+
+@keyframes spin1venida  {
+    0%{
+        width: 10%;
+    }
+    20%{
+        width: 20%;
+    }
+    30%{
+        width: 90%;
+    }
+    40%{
+        width: 0%;
+    }
+    50%{
+        width: 50%;
+    }
+    60%{
+        width: 0%;
+    }
+    70%{
+        width: 50%;
+    }
+    80%{
+        width: 20%;
+    }
+    90%{
+        width: 50%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes spin2venida  {
+    0%{
+        width: 80%;
+    }
+    10%{
+        
+        width: 30%;
+    }
+    20%{
+        width: 90%;
+    }
+    30%{
+        width: 25%;
+    }
+    40%{
+        width: 100%;
+    }
+    50%{
+        width: 0%;
+    }
+    60%{
+        width: 50%;
+    }
+    70%{
+        width: 45%;
+    }
+    80%{
+        width: 10%;
+    }
+    90%{
+        width: 70%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes spin3venida  {
+    0%{
+        width: 50%;
+    }
+    10%{
+        
+        width: 50%;
+    }
+    20%{
+        width: 30%;
+    }
+    30%{
+        width: 25%;
+    }
+    40%{
+        width: 50%;
+    }
+    50%{
+        width: 70%;
+    }
+    60%{
+        width: 55%;
+    }
+    70%{
+        width: 20%;
+    }
+    80%{
+        width: 90%;
+    }
+    90%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
